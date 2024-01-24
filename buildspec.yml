@@ -11,6 +11,8 @@ phases:
 
   pre_build:
     commands:
+      - nvm install 14
+      - nvm use 14
       - echo Installing source NPM dependiencies ...
       - yarn build 
       - ls -la
